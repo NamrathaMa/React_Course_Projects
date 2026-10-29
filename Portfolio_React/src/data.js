@@ -120,7 +120,7 @@ export const projects = [
     description:
       "The site you're looking at. A fun website about me, and what I love doing.",
     status: "live",
-    tech: ["HTML", "CSS", "React"],
+    tech: ["React", "Vite", "CSS", "HTML"],
     repo: "https://github.com/NamrathaMa/React_Course_Projects/tree/main/Portfolio_React",
   },
   {
