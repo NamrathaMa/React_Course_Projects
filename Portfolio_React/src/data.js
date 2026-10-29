@@ -118,10 +118,10 @@ export const projects = [
   {
     title: "Personal Portfolio",
     description:
-      "The site you're looking at. A fun website about me, and what I love doing. First of many versions (attempting to build in React next!)",
+      "The site you're looking at. A fun website about me, and what I love doing.",
     status: "live",
     tech: ["HTML", "CSS", "React"],
-    repo: "https://github.com/NamrathaMa/namrathama.github.io",
+    repo: "https://github.com/NamrathaMa/React_Course_Projects/tree/main/Portfolio_React",
   },
   {
     title: "Guess My Number",
