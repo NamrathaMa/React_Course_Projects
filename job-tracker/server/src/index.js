@@ -1,6 +1,9 @@
 import "dotenv/config";
-import express from "express";
 import { connectDB } from "./config/db.js";
+import jobsRouter from "./routes/jobs.js";
+import errorHandler from "./middleware/errorHandler.js";
+
+import express from "express";
 
 const app = express();
 app.use(express.json());
@@ -8,6 +11,9 @@ app.use(express.json());
 app.get("/api/health", (req, res) => {
   res.json({ ok: true });
 });
+
+app.use("/api/jobs", jobsRouter);
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 4000;
 
