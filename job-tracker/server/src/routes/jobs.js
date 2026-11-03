@@ -1,11 +1,30 @@
 import express from "express";
-import Job from "../models/Job.js";
+import Job, { JOB_STATUSES } from "../models/Job.js";
 
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  const jobs = await Job.find().sort({ createdAt: -1 });
-  res.json(jobs);
+  const filter = {};
+  const { status, search } = req.query;
+
+  if (status && !JOB_STATUSES.includes(status)) {
+    return res.status(400).json({ error: "Invalid status" });
+  }
+
+  if (status) {
+    filter.status = status;
+  }
+
+  if (search) {
+    const escaped = search.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    filter.$or = [
+      { company: { $regex: escaped, $options: "i" } },
+      { role: { $regex: escaped, $options: "i" } },
+    ];
+  }
+  const jobs = await Job.find(filter).sort({ createdAt: -1 });
+
+  return res.json(jobs);
 });
 
 router.get("/:id", async (req, res) => {
@@ -33,7 +52,7 @@ router.patch("/:id", async (req, res) => {
       .status(404)
       .json({ error: `Job with id ${req.params.id} not found.` });
   }
-  return res.status(200).json(updatedJob);
+  return res.json(updatedJob);
 });
 
 router.delete("/:id", async (req, res) => {

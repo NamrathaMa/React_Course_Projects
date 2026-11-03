@@ -18,6 +18,7 @@ export const jobs = [
     dateApplied: "2026-10-15",
     description:
       "Required/Minimum Qualifications Associate's Degree or Apprenticeship in Computer Science, or related technical discipline AND 6+ months work or internship proven experience coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. Job Requirements: Other & Additional Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check ",
+    salary: 20,
     notes: "Applied on Oct 15th",
   },
   {
@@ -26,7 +27,20 @@ export const jobs = [
     location: "Bangalore",
     dateApplied: "2026-10-26",
     description: "React, JavaScript",
+    salary: 8,
     status: "interview",
+    interviews: [
+      {
+        date: "2026-10-26",
+        round: "technical",
+        notes: "One hour of technical interview with Kunal",
+      },
+      {
+        date: "2026-10-30",
+        round: "HR",
+        notes: "30 minutes of HR interview with Nishant",
+      },
+    ],
     notes: "Test 2",
   },
   {
@@ -35,6 +49,7 @@ export const jobs = [
     location: "Bangalore",
     link: "https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/userHome",
     dateApplied: "2026-10-15",
+    salary: 30,
     status: "rejected",
     notes: "Applied on October 15th",
   },
