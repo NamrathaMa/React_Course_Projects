@@ -10,12 +10,14 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <Routes>
-        <Route path="/" element={<BoardPage />} />
-        <Route path="/jobs/new" element={<NewJobPage />} />
-        <Route path="/jobs/:id" element={<JobDetailPage />} />
-        <Route path="/stats" element={<StatsPage />} />
-      </Routes>
+      <main className="page">
+        <Routes>
+          <Route path="/" element={<BoardPage />} />
+          <Route path="/jobs/new" element={<NewJobPage />} />
+          <Route path="/jobs/:id" element={<JobDetailPage />} />
+          <Route path="/stats" element={<StatsPage />} />
+        </Routes>
+      </main>
     </>
   );
 }
