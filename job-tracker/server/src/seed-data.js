@@ -19,6 +19,7 @@ export const jobs = [
     description:
       "Required/Minimum Qualifications Associate's Degree or Apprenticeship in Computer Science, or related technical discipline AND 6+ months work or internship proven experience coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. Job Requirements: Other & Additional Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check ",
     salary: 20,
+    contacts: [{ name: "Aditi Rao", email: "aditi.rao@microsoft.com" }],
     notes: "Applied on Oct 15th",
   },
   {
@@ -28,7 +29,7 @@ export const jobs = [
     dateApplied: "2026-10-26",
     description: "React, JavaScript",
     salary: 8,
-    status: "interview",
+    status: "offer",
     interviews: [
       {
         date: "2026-10-26",
@@ -40,6 +41,10 @@ export const jobs = [
         round: "HR",
         notes: "30 minutes of HR interview with Nishant",
       },
+    ],
+    contacts: [
+      { name: "Nishant Bhushan", email: "nishant@aevionenergy.com" },
+      { name: "Kunal Jain", email: "kunal_jain@aevionenergy.com" },
     ],
     notes: "Test 2",
   },

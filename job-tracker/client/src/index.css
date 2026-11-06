@@ -164,3 +164,109 @@ body {
   flex-direction: column;
   gap: 12px;
 }
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: var(--muted);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--text);
+  }
+}
+
+.job-detail {
+  a {
+    text-decoration: none;
+    color: var(--text);
+  }
+  .job-info {
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 24px 28px;
+    max-width: 760px; /* keeps lines readable on wide screens */
+
+    h1 {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap; /* pill drops below on narrow screens */
+    }
+    > p {
+      margin-top: 4px;
+    }
+  }
+}
+
+.job-role {
+  font-size: 18px;
+}
+
+.job-location {
+  color: var(--muted);
+}
+.status-pill {
+  display: inline-block;
+  padding: 2px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.posting-link {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    background: var(--column);
+  }
+}
+
+.detail-section {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 2px dashed var(--column);
+
+  h2 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  a {
+    color: var(--text);
+  }
+}
+
+.job-description,
+.job-notes,
+.job-location {
+  white-space: pre-line;
+  color: var(--text);
+}
+.interview-round {
+  background: var(--bg);
+  border-left: 4px solid var(--interview);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+
+  .job-interview {
+    font-weight: 500;
+  }
+
+  p + p {
+    color: var(--muted);
+  }
+}
+.contacts-list p {
+  margin-bottom: 4px;
+}

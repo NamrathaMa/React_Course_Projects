@@ -53,6 +53,16 @@ const jobSchema = new mongoose.Schema(
             "Please provide a valid email.",
           ],
           trim: true,
+          required: [
+            function () {
+              return !this.phoneNbr;
+            },
+            "Add an email or a phone number",
+          ],
+        },
+        phoneNbr: {
+          type: String,
+          trim: true,
         },
       },
     ],
