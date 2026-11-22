@@ -3,7 +3,7 @@ import SectionTag from "./SectionTag";
 import { EmailCopy, CopyCheck } from "./Icons";
 import { useState } from "react";
 
-const EMAIL = "nammy.manikonda@gmail.com";
+const EMAIL = "namrathamanikonda@gmail.com";
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
