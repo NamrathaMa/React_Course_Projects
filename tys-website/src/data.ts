@@ -30,3 +30,33 @@ export const ribbonText = [
   "Strength",
   "Inner peace",
 ];
+
+export const pillarSection = {
+  title: "The TYS Approach",
+  description:
+    "A fit body, a calm mind and clear emotions come down to three basics.",
+};
+
+export const pillars = [
+  {
+    title: "Breath",
+    sanskrit: "prana",
+    description:
+      "More oxygen to organs and brain: healthy organs, a calm mind, and wiser choices.",
+    icon: "breath",
+  },
+  {
+    title: "Water",
+    sanskrit: "jal",
+    description:
+      "Not just how much, but how and when: a lighter body and naturally glowing skin.",
+    icon: "water",
+  },
+  {
+    title: "Food",
+    sanskrit: "ahara",
+    description:
+      "What and when we eat shapes us: the right food for a healthy mind and body.",
+    icon: "food",
+  },
+] as const;

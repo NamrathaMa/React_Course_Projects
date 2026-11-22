@@ -188,3 +188,76 @@ export function Lotus() {
     </svg>
   );
 }
+
+export function BreathIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="30"
+      height="30"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h8" />
+    </svg>
+  );
+}
+export function WaterIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="30"
+      height="30"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z" />
+    </svg>
+  );
+}
+export function FoodIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="30"
+      height="30"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M11 20A7 7 0 0 1 4 13c0-5 4-9 16-9 0 12-4 16-9 16z" />
+      <path d="M4 20c4-4 7-6 11-8" />
+    </svg>
+  );
+}
+export function WaveTop() {
+  return (
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+      <path
+        d="M0 60 C 240 0, 480 0, 720 30 S 1200 60, 1440 10 V 60 Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+export function WaveBottom() {
+  return (
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+      <path
+        d="M0 0 H 1440 V 30 C 1200 70, 960 10, 720 35 S 240 60, 0 20 Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}

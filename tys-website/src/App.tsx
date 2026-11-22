@@ -3,6 +3,7 @@ import Intro from "./components/Intro.tsx";
 import Ribbon from "./components/Ribbon.tsx";
 
 import "./App.css";
+import PillarSection from "./components/PillarSection.tsx";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Intro />
       <Ribbon />
+      <PillarSection />
     </>
   );
 }
