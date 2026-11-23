@@ -60,3 +60,43 @@ export const pillars = [
     icon: "food",
   },
 ] as const;
+
+export const programSection = {
+  label: "Programs",
+  heading: "Find the program that fits you.",
+  text: "Not sure where to start? A free 15-minute consultation will point you to the right one.",
+};
+
+export const programs = [
+  {
+    title: "Fitness / Hatha Yoga",
+    description: "Strength, flexibility and energy, every day.",
+    icon: "fitness",
+  },
+  {
+    title: "Weightloss Yoga",
+    description: "Better sleep, emotions and well-being, too.",
+    icon: "weightloss",
+    badge: "Most joined",
+  },
+  {
+    title: "Lifestyle Yoga",
+    description: "Simple daily routines for lasting health.",
+    icon: "lifestyle",
+  },
+  {
+    title: "Therapy Yoga",
+    description: "Personal practice for specific health concerns.",
+    icon: "therapy",
+  },
+  {
+    title: "Prenatal Yoga",
+    description: "Gentle and safe through every trimester.",
+    icon: "prenatal",
+  },
+  {
+    title: "Corporate Yoga",
+    description: "Less stress, sharper thinking, happier teams.",
+    icon: "corporate",
+  },
+] as const;

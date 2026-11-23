@@ -261,3 +261,111 @@ export function WaveBottom() {
     </svg>
   );
 }
+export function FitnessIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="30"
+      height="30"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="4" r="2" />
+      <path d="M12 6v7M5 8l7 2 7-2M9 21l3-8 3 8" />
+    </svg>
+  );
+}
+export function WeightlossIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="30"
+      height="30"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="4" r="2" />
+      <path d="M12 6v8M12 9l-6-4M12 9l6-4M8 21l4-7 4 7" />
+    </svg>
+  );
+}
+export function LifestyleIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="30"
+      height="30"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="5" r="2" />
+      <path d="M12 7v6M8 11h8M6 19c2-2 4-3 6-3s4 1 6 3" />
+    </svg>
+  );
+}
+export function TherapyIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="30"
+      height="30"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z" />
+    </svg>
+  );
+}
+export function PrenatalIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="30"
+      height="30"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="4" r="2" />
+      <path d="M12 6c-2 2-2 5 0 7 3 1 3 5 0 6M9 21h6" />
+    </svg>
+  );
+}
+export function CorporateIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="30"
+      height="30"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="8" cy="7" r="2.5" />
+      <circle cx="16" cy="7" r="2.5" />
+      <path d="M3 19c0-3 2-5 5-5s5 2 5 5M11 19c0-3 2-5 5-5s5 2 5 5" />
+    </svg>
+  );
+}

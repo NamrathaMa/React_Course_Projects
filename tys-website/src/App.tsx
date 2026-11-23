@@ -4,6 +4,7 @@ import Ribbon from "./components/Ribbon.tsx";
 
 import "./App.css";
 import PillarSection from "./components/PillarSection.tsx";
+import Programs from "./components/Programs.tsx";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Intro />
       <Ribbon />
       <PillarSection />
+      <Programs />
     </>
   );
 }

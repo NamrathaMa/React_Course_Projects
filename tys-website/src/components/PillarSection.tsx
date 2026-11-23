@@ -15,13 +15,7 @@ export default function PillarSection() {
         </h2>
         <div className="pillars">
           {pillars.map((pillar) => (
-            <Pillar
-              title={pillar.title}
-              description={pillar.description}
-              sanskrit={pillar.sanskrit}
-              icon={pillar.icon}
-              key={pillar.title}
-            />
+            <Pillar key={pillar.title} {...pillar} />
           ))}
         </div>
       </div>
