@@ -100,3 +100,66 @@ export const programs = [
     icon: "corporate",
   },
 ] as const;
+
+export const scheduleSection = {
+  label: "Before you scroll on",
+  heading: "Take one slow breath with us.",
+  description:
+    "Follow the circle: in as it grows, out as it softens. That calm you feel is where every TYS class begins.",
+  btnTxt: "See the full schedule",
+  schedule: [
+    {
+      range: "Mon - Fri  ·  Morning",
+      timings: ["6:30 AM", "7:30 AM", "10:00 AM"],
+    },
+    { range: "Mon - Fri  ·  Evening", timings: ["4:30 PM", "7:00 PM"] },
+    { range: "Saturday", timings: ["8:00 AM"] },
+  ],
+};
+export const footerSection = {
+  address:
+    "Sobha Lakeview Club House, Green Glen Layout, Bellandur, Bengaluru 560103",
+  columns: [
+    {
+      heading: "Studio",
+      links: [
+        { label: "About TYS", href: "#" },
+        { label: "Dharmendra Soni", href: "#" },
+        { label: "Our teachers", href: "#" },
+        { label: "Careers", href: "#" },
+      ],
+    },
+    {
+      heading: "Practice",
+      links: [
+        { label: "Schedule", href: "#" },
+        { label: "Workshops", href: "#" },
+        { label: "Virtual classes", href: "#" },
+        { label: "Refer a friend", href: "#" },
+      ],
+    },
+    {
+      heading: "Contact",
+      links: [
+        { label: "+91 97399 09466", href: "tel:+919739909466" },
+        {
+          label: "Instagram",
+          href: "https://www.instagram.com/traditionalyogastudio/",
+        },
+        {
+          label: "YouTube",
+          href: "https://www.youtube.com/@traditionalyogastudio4467",
+        },
+        {
+          label: "Facebook",
+          href: "https://www.facebook.com/traditionalyogastudio/",
+        },
+      ],
+    },
+  ],
+  copyright: "© Traditional Yoga Studio",
+  legalLinks: [
+    { label: "Privacy Policy", href: "#" },
+    { label: "Disclaimer", href: "#" },
+  ],
+};

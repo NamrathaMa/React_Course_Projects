@@ -5,6 +5,7 @@ export function SunIcon() {
       width="22"
       height="22"
       viewBox="0 0 48 48"
+      aria-hidden="true"
     >
       <linearGradient
         id="SVGID_1__xctFOOIVorz0_gr1"

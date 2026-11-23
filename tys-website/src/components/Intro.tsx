@@ -32,7 +32,10 @@ export default function Intro() {
           <Mandala />
         </div>
         <div className="intro__img">
-          <img src={IntroPhoto} alt="D Sir" />
+          <img
+            src={IntroPhoto}
+            alt="Dharmendra Soni meditating in lotus pose"
+          />
         </div>
       </div>
     </section>

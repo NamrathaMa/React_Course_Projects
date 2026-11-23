@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header>
       <div className="navbar--section container">
-        <a className="logo" href="#home">
+        <a className="logo" href="#">
           <img src={logo} alt="Traditional Yoga Studio" />
         </a>
         <nav className="navbar">
