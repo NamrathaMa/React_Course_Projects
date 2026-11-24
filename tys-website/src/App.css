@@ -198,6 +198,7 @@ header {
   background-color: var(--color-accent-light);
   padding-block: 18px;
   overflow: hidden;
+  position: relative;
   .ribbon__track {
     display: flex;
     align-items: center;
@@ -585,8 +586,7 @@ header {
         position: absolute;
         top: 24px;
         right: 40px;
-        font-family:
-          Georgia, serif; /* Manrope's “ is thin; a serif one looks more like a classic quote mark */
+        font-family: Georgia, serif;
         font-size: 140px;
         line-height: 1;
         color: var(--color-accent);
@@ -680,5 +680,196 @@ header {
   .footer__legal {
     display: flex;
     gap: 24px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .navbar--section {
+    grid-template-columns: 1fr auto;
+    .navbar {
+      display: none;
+    }
+  }
+
+  .intro--section {
+    grid-template-columns: 1fr;
+    gap: 56px;
+    padding-block: 40px 72px;
+    .intro__img {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      aspect-ratio: 420 / 480;
+    }
+  }
+
+  .pillar--section {
+    padding-block: 72px;
+    margin-block: 96px;
+    .pillars {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .program--section {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-bottom: 72px;
+    .program__section__left {
+      position: static;
+    }
+  }
+
+  .testimonial--section {
+    margin-top: 0;
+    .testimonial__inner {
+      grid-template-columns: 1fr;
+      gap: 32px;
+      padding-block: 72px;
+    }
+  }
+
+  .schedule--section {
+    .schedule__inner {
+      grid-template-columns: 1fr;
+      gap: 48px;
+      padding-block: 72px;
+    }
+  }
+
+  .footer--section {
+    .footer__inner {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding-inline: 20px;
+  }
+
+  .navbar--section {
+    padding-block: 14px;
+    .logo img {
+      height: 36px;
+    }
+  }
+  .btn {
+    &.navbtn {
+      padding: 10px 16px;
+      font-size: 14px;
+    }
+  }
+
+  .intro--section {
+    .intro__img {
+      max-width: 300px;
+    }
+    .intro__mandala {
+      inset: -60px;
+    }
+    .intro__description {
+      gap: 22px;
+      .intro__title {
+        font-size: 12px;
+      }
+      .intro__heading {
+        font-size: 38px;
+      }
+      .intro__text {
+        font-size: 16px;
+      }
+      .intro__links {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .ribbon--section {
+    .ribbon__track {
+      font-size: 18px;
+    }
+  }
+
+  .pillar--section {
+    .pillar__section__description {
+      font-size: 28px;
+    }
+    .pillar {
+      padding: 28px;
+    }
+  }
+
+  .program--section {
+    .program__section__img {
+      height: 300px;
+    }
+  }
+  .program__item {
+    gap: 16px;
+    padding: 12px 0;
+    .program__badge {
+      white-space: nowrap;
+    }
+  }
+
+  .testimonial--section {
+    .testimonial__inner {
+      .testimonial__container {
+        padding: 24px;
+        .testimonial__mark {
+          font-size: 96px;
+          top: 12px;
+          right: 20px;
+        }
+        .testimonial__review {
+          padding-right: 40px;
+        }
+      }
+    }
+  }
+
+  .schedule--section {
+    .schedule__inner {
+      .breath {
+        height: 280px;
+        .breath__ring {
+          width: 260px;
+          height: 260px;
+        }
+        .breath__circle {
+          width: 230px;
+          height: 230px;
+        }
+        .breath__words {
+          font-size: 18px;
+        }
+      }
+      .schedule__div {
+        .schedule__box {
+          padding: 8px 20px;
+          .schedule__entry {
+            grid-template-columns: 1fr;
+            gap: 4px;
+            .schedule__box__time {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer--section {
+    .footer__links {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 32px;
+    }
+    .footer__bottom {
+      flex-direction: column;
+      gap: 12px;
+    }
   }
 }

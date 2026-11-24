@@ -20,6 +20,10 @@ a {
   --text-font: "Manrope", sans-serif;
 }
 
+html {
+  overflow-x: clip;
+}
+
 body {
   font-family: var(--text-font);
   background-color: var(--color-bg);
