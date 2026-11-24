@@ -77,6 +77,14 @@ header {
     display: flex;
     gap: 56px;
   }
+  .navbar__toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: var(--color-primary);
+    cursor: pointer;
+  }
 }
 
 .intro--section {
@@ -685,9 +693,34 @@ header {
 
 @media (max-width: 1100px) {
   .navbar--section {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr auto auto;
     .navbar {
       display: none;
+      &.is-open {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 8px 24px 24px;
+        background-color: var(--color-bg);
+        border-bottom: 1px solid var(--color-primary-light);
+        box-shadow: 0 12px 24px rgba(74, 66, 102, 0.08);
+
+        a {
+          padding-block: 14px;
+          font-size: 18px;
+          border-bottom: 1px solid var(--color-primary-light);
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    .navbar__toggle {
+      display: block;
     }
   }
 
