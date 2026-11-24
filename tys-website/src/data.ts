@@ -109,10 +109,10 @@ export const scheduleSection = {
   btnTxt: "See the full schedule",
   schedule: [
     {
-      range: "Mon - Fri  ·  Morning",
+      range: "Mon – Fri · Morning",
       timings: ["6:30 AM", "7:30 AM", "10:00 AM"],
     },
-    { range: "Mon - Fri  ·  Evening", timings: ["4:30 PM", "7:00 PM"] },
+    { range: "Mon – Fri · Evening", timings: ["4:30 PM", "7:00 PM"] },
     { range: "Saturday", timings: ["8:00 AM"] },
   ],
 };
@@ -163,3 +163,30 @@ export const footerSection = {
     { label: "Disclaimer", href: "#" },
   ],
 };
+export const testimonialSection = {
+  label: "Kind Words",
+  description: "Every body is unique. So is every story.",
+};
+export const testimonials = [
+  {
+    name: "Srinit Das",
+    occupation: "Operations manager, Amazon",
+    location: "Bangalore",
+    review:
+      "Yoga has helped me be more aware about myself. I have much better energy, fitness and agility. It has really helped my athletic performance and stamina.",
+  },
+  {
+    name: "Arpita Mitra",
+    occupation: "Housewife",
+    location: "Bangalore",
+    review:
+      "Post 2019, until a couple of months back, I have been through bouts of physical fatigue and often felt breathless. My only go-to person is Dharmendra Sir. He took me through a step by step approach- which helped me to correct my digestive cycle, and improved my sleeping pattern. This has considerably reduced my physical stress Thank you so much Sir 🙏.",
+  },
+  {
+    name: "Soumyashree Priyadarshani",
+    occupation: "Analyst, Wells Fargo",
+    location: "Bangalore",
+    review:
+      "I joined TYS in August. My health issues restricted my movements which were altered by the basic changes suggested in TYS. This motivated me to develop more awareness about my body. Yoga and lifestyle changes helped me recover my back pain.",
+  },
+];

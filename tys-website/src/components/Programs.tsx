@@ -11,7 +11,10 @@ export default function Programs() {
         <h2 className="program__section__heading">{programSection.heading}</h2>
         <p className="program__section__text">{programSection.text}</p>
         <div className="program__section__img">
-          <img src={ProgramPhoto} alt="program photo" />
+          <img
+            src={ProgramPhoto}
+            alt="Three students holding one-legged wheel pose while an instructor adjusts a student's leg"
+          />
         </div>
       </div>
       <div className="program__items">

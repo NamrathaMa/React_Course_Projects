@@ -10,7 +10,7 @@ export default function Footer() {
       </div>
       <div className="footer__inner container">
         <div className="footer__brand">
-          <img src={logo} alt="Traditional Yoga Studio logo" />
+          <img src={logo} alt="Traditional Yoga Studio" />
           <address className="footer__address">{footerSection.address}</address>
         </div>
         <div className="footer__links">
